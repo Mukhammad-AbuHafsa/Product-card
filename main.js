@@ -6,7 +6,7 @@ const btnColor = document.querySelector('[data-action="color"]');
 btnColor.addEventListener('click', () => {
     console.log('Кнопка была нажата');
     productCard.style.backgroundColor = '#d59fca'
-    });
+});
 
 
 // Покраска всех карточек
@@ -37,7 +37,7 @@ function openGoogle() {
 
 // Вывод контента заголовка в консоль при наведении
 
-const getTitle = document.querySelector('.products__title');
+const productsTitle = document.querySelector('.products__title');
 
 getTitle.addEventListener('mouseenter', (event) => {
     console.log(event.target.textContent);
