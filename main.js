@@ -39,7 +39,7 @@ function openGoogle() {
 
 const productsTitle = document.querySelector('.products__title');
 
-getTitle.addEventListener('mouseenter', (event) => {
+productsTitle.addEventListener('mouseenter', (event) => {
     console.log(event.target.textContent);
 });
 
