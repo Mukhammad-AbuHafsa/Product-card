@@ -10,11 +10,11 @@ const LIGHT_SPEED = 299792458;
 
 function speedTest(speed) {
     if (speed > LIGHT_SPEED) {
-        console.log ("Сверхсветовая скорость");
+        console.log("Сверхсветовая скорость");
     } else if (speed < LIGHT_SPEED) {
-        console.log ("Субсветовая скорость");
+        console.log("Субсветовая скорость");
     } else {
-        console.log ("Скорость света");
+        console.log("Скорость света");
     }
 }
 
@@ -28,10 +28,10 @@ const productPrice = 99;
 
 function buyProduct(budget) {
     if (budget >= productPrice) {
-        console.log (`${productName} приобретён. Спасибо за покупку!`)
+        console.log(`${productName} приобретён. Спасибо за покупку!`)
     } else {
         const shortage = productPrice - budget;
-        console.log (`Вам не хватает ${shortage}$, пополните баланс.`)
+        console.log(`Вам не хватает ${shortage}$, пополните баланс.`)
     }
 }
 
@@ -46,14 +46,14 @@ const chaptersQuantity = 30;
 
 function readQuran(pages) {
     if (pages > pagesQuantity) {
-        console.log ('Ошибка! В Коране всего 600 страниц.');
+        console.log('Ошибка! В Коране всего 600 страниц.');
     } else if (pages === pagesQuantity) {
-        console.log (`Вы закончили чтение. Не забудьте сделать дуа!`);
+        console.log(`Вы закончили чтение. Не забудьте сделать дуа!`);
     } else {
         const remainingPages = pagesQuantity - pages;
         const remainingChapters = Math.floor(remainingPages/20);
         const remainingPagesInChapter = remainingPages % 20;
-        console.log (`У вас осталось ${remainingChapters} джузов и ${remainingPagesInChapter} страниц`);
+        console.log(`У вас осталось ${remainingChapters} джузов и ${remainingPagesInChapter} страниц`);
     }
 }
 
